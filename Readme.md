@@ -7,4 +7,5 @@
 - **Linguagens Utilizadas:** Java, UML
 
 ## Aulas
-- [Aula sobre git e Markdown-22/07/2026](Aulas/2026-07-22) 
+- [Aula sobre git e Markdown-22/07/2026](Aulas/2026-07-22)
+- [Revisão 2 de Java-29/07/2026](Aulas/2026-07-29)  
