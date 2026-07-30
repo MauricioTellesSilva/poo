@@ -15,6 +15,14 @@ String buffer ="";
 String diasAi[] =new String[5];
 for (int i=0; i<=5; i++){
     buffer=IO.readln("Digite o dia da semana que há aula: ");
+    if (buffer.contains("nao")){
+        if (i==0){
+            IO.println("Digite pelo menos 1 dia de aula");
+        }
+        else{
+            break;
+        }
+    }
     switch(buffer){
         case "seg":
               diasAi[0]="seg";
@@ -30,15 +38,6 @@ for (int i=0; i<=5; i++){
         break;
         case "sex":
               diasAi[4]="sex";
-        break;
-        case "nao":
-        if (i==0){
-            IO.println("nenhum dia foi digitado digite no minimo 1 dia");
-            i--;
-        }
-        else{
-         break;   
-        }
         break;
         default:
             IO.println("Data invalida, datas validas seg,ter,qua,qui e sex");
