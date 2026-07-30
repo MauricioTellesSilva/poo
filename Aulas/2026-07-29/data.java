@@ -11,15 +11,41 @@ void main() {
     // -sex
 
 String sigl =IO.readln("Digite a Sigla da disciplina: ");
-String buffer =IO.readln("Digite a quantidade de dias da semana que tem aula desta disciplina: ");
-int qdtA =Integer.parseInt(buffer);
-String diasA[] =new String[qdtA];
-    for (int i=0; i<=qdtA; i++){
-      buffer=IO.readln("Digite o dia da semana da aula "+(i)+" :");
-      diasA[i]=buffer;
+String buffer ="";
+String diasAi[] =new String[5];
+int ip=0;
+for (int i=0; i<=5; i++){
+    buffer=IO.readln("Digite o dia da semana que há aula: ");
+    if (buffer.equals("nao")){
+        break;
     }
+    switch(buffer){
+        case "seg":
+              diasAi[ip]=buffer;
+        break;
+        case "ter":
+              diasAi[ip]=buffer;
+        break;
+        case "qua":
+              diasAi[ip]=buffer;
+        break;
+        case "qui":
+              diasAi[ip]=buffer;
+        break;
+        case "sex":
+              diasAi[ip]=buffer;
+        break;
+        default:
+            IO.println("Data invalida, datas validas seg,ter,qua,qui e sex");
+            ip--;
+        break;
+    }
+    ip++;
+}
+String diasA[] =new String[ip];
 IO.println("na disciplina "+sigl+" você tem aulas nos seguintes dias");
-    for (int i=1; i<=qdtA; i++){
-        IO.println("- "+diasA[i-1]);
+    for (int i=0; i<diasA.length; i++){
+        diasA[i]=diasAi[i];
+        IO.println("- "+diasA[i]);
     }
 }
