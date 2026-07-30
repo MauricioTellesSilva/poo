@@ -13,7 +13,6 @@ void main() {
 String sigl =IO.readln("Digite a Sigla da disciplina: ");
 String buffer ="";
 String diasAi[] =new String[5];
-int ip=0;
 for (int i=0; i<=5; i++){
     buffer=IO.readln("Digite o dia da semana que há aula: ");
     if (buffer.equals("nao")){
@@ -21,31 +20,30 @@ for (int i=0; i<=5; i++){
     }
     switch(buffer){
         case "seg":
-              diasAi[ip]=buffer;
+              diasAi[0]="seg";
         break;
         case "ter":
-              diasAi[ip]=buffer;
+              diasAi[1]="ter";
         break;
         case "qua":
-              diasAi[ip]=buffer;
+              diasAi[2]="qua";
         break;
         case "qui":
-              diasAi[ip]=buffer;
+              diasAi[3]="qui";
         break;
         case "sex":
-              diasAi[ip]=buffer;
+              diasAi[4]="sex";
         break;
         default:
             IO.println("Data invalida, datas validas seg,ter,qua,qui e sex");
-            ip--;
+            i--;
         break;
     }
-    ip++;
 }
-String diasA[] =new String[ip];
 IO.println("na disciplina "+sigl+" você tem aulas nos seguintes dias");
-    for (int i=0; i<diasA.length; i++){
-        diasA[i]=diasAi[i];
-        IO.println("- "+diasA[i]);
+    for (int i=0; i<diasAi.length; i++){
+        if(diasAi[i]!=null){
+        IO.println("- "+diasAi[i]);
+        }
     }
 }
