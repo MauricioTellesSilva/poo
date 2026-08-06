@@ -1,6 +1,6 @@
 public class Media {
     public static void main (String [] args){
-        if (args.length>2 || args.length<2){
+        if (args.length !=2){
            IO.println("Digite 2 notas"); 
         } else{
             double nota1=Double.parseDouble(args[0]);
