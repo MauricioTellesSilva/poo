@@ -7,9 +7,6 @@ import java.lang.classfile.instruction.SwitchCase;
 import java.util.Locale;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
         String mes=IO.readln("Entre com o mês: ");
