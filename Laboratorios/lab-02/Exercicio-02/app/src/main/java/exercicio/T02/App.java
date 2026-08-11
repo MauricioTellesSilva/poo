@@ -4,11 +4,16 @@
 package exercicio.T02;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Random rnd = new Random();
+        int segredo = rnd.nextInt(1,101);
+        String buffer=IO.readln("Entre com o seu palpite (1 a 100)");
+        int palpite = Integer.parseInt(buffer);
+        boolean acertou=false;
+        int i =0;
+        while(!acertou){
+         i++;
+
+        }
     }
 }
