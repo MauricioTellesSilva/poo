@@ -3,12 +3,58 @@
  */
 package exercicio.T01;
 
+import java.lang.classfile.instruction.SwitchCase;
+import java.util.Locale;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        String mes=IO.readln("Entre com o mês: ");
+        int mesint=0;
+        int dia=Integer.parseInt(IO.readln("Entre com o dia: "));
+        String estacao="";
+        switch(mes.toLowerCase(Locale.ROOT)){
+            case "janeiro","fevereiro" :
+                estacao="Verão";
+                break;
+            case "março":
+                if(dia<=20){
+                    estacao="Verão";
+                }
+                break;
+            case "abril","maio":
+                    estacao="Outono";
+                break;
+            case "junho":
+                if(dia<=19){
+                    estacao="Outono";
+                } else{
+                    estacao="Inverno";
+                }
+                break;
+            case "julho","agosto":
+                estacao="Inverno";
+                break;
+            case "setembro":
+                if(dia<=21){
+                 estacao="Inverno";
+                } else {
+                 estacao="Primavera";
+                }
+                break;
+            case "outubro","novembro":
+                estacao="Primavera";
+                break;
+            case "dezembro":
+                if(dia<=20){
+                 estacao="Primavera";
+                } else{
+                    estacao="Verão";
+                }
+        }
+        IO.println(estacao);
     }
 }
