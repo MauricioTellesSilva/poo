@@ -12,4 +12,4 @@
 - [Argumentos em Java-05/08/2026](Aulas/2026-08-05)
 - [Introdução ao gradle-11/08/2026](Aulas/2026-08-11)
 ## Laboratorios
-- [Introdução ao gradle-11/08/2026](laboratorios/lab-02)
+- [Introdução ao gradle (lab-02)-11/08/2026](laboratorios/lab-02)
