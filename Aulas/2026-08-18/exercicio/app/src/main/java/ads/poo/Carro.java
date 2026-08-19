@@ -10,7 +10,11 @@ public class Carro {
         }
     }
     public void freiar(int frenagem){
-        velocidadeAtual-=frenagem;
+        if ((velocidadeAtual-frenagem)>=0){
+            velocidadeAtual-=frenagem;
+        } else{
+            velocidadeAtual=0;
+        }
     }
     public void painel(){
         IO.println("A velocidade atual é: "+velocidadeAtual);
