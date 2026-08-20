@@ -4,11 +4,13 @@
 package ads.poo;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+        Character NPC = new Character();
+        IO.println("Digite em sequencia separado por (,) o attack,speed,inteligence,agility,dex,luck,maxhealth");
+        NPC.setCharacter("6,5,7,3,1,7,56");
+        IO.println("Raridade do item encontrado: "+NPC.openChest());
+        IO.println("Dano infringido:"+NPC.characterAttack());
     }
 }
