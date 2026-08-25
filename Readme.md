@@ -11,5 +11,7 @@
 - [Revisão 2 de Java-29/07/2026](Aulas/2026-07-29)
 - [Argumentos em Java-05/08/2026](Aulas/2026-08-05)
 - [Introdução ao gradle-11/08/2026](Aulas/2026-08-11)
+- [Introdução as classes-18/08/2026](Aulas/2026-08-18)
+- [Exercicios sobre classes-19/08/2026](Aulas/2026-08-19)
 ## Laboratorios
 - [Introdução ao gradle (lab-02)-11/08/2026](laboratorios/lab-02)
