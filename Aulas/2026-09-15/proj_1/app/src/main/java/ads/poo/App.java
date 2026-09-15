@@ -7,24 +7,29 @@ import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) {
-        ArrayList<String> lista = new ArrayList();
-        lista.add("POO");
-        lista.add("ADS");
-        lista.add("IFSC");
+        ArrayList<Pessoa> agenda = new ArrayList();
 
-        lista.add(1,"SJE");
+        agenda.add(new Pessoa("Lucas Godoy","Lucas.doy@aluno.ifsc.edu.br"));
+        agenda.add(new Pessoa("Bruno","Bruno@aluno.ifsc.edu.br"));
+
+
+
+        agenda.removeIf(e ->e.getNome().equals("Bruno"));
+
+
+        agenda.forEach(IO::println);
 
         //for i
-        for (int i = 0; i < lista.size(); i++) {
-            IO.println(lista.get(i));
-        }
+        //for (int i = 0; i < lista.size(); i++) {
+        //    IO.println(lista.get(i));
+        // }
         //for each
-        for(String e :lista){
-            IO.println(e);
-        }
+        //for(String e :lista){
+        //    IO.println(e);
+        //}
         //lambda
-        lista.forEach(e -> IO.println(e));
+        //lista.forEach(e -> IO.println(e));
         //method reference
-        lista.forEach(IO::println);
+        //lista.forEach(IO::println);
     }
 }
