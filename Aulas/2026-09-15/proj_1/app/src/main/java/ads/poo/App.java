@@ -14,9 +14,17 @@ public class App {
 
         lista.add(1,"SJE");
 
-
+        //for i
         for (int i = 0; i < lista.size(); i++) {
             IO.println(lista.get(i));
         }
+        //for each
+        for(String e :lista){
+            IO.println(e);
+        }
+        //lambda
+        lista.forEach(e -> IO.println(e));
+        //method reference
+        lista.forEach(IO::println);
     }
 }
