@@ -3,9 +3,20 @@
  */
 package ads.poo;
 
-public class App {
+import java.util.ArrayList;
 
+public class App {
     public static void main(String[] args) {
-        IO.println("teste");
+        ArrayList<String> lista = new ArrayList();
+        lista.add("POO");
+        lista.add("ADS");
+        lista.add("IFSC");
+
+        lista.add(1,"SJE");
+
+
+        for (int i = 0; i < lista.size(); i++) {
+            IO.println(lista.get(i));
+        }
     }
 }
