@@ -4,6 +4,7 @@
 package ads.poo;
 
 
+ import java.lang.classfile.instruction.SwitchCase;
  import java.util.ArrayList;
  import java.util.HashMap;
 
@@ -27,10 +28,41 @@ public class App {
         //mapa.remove("456"); //remoção pela chave
         //mapa.values().removeIf(e->e.equals("Juca"));// remove todos com valor igual Juca
             boolean sair=false;
+            String buffer;
+            int digitado=0;
             while(!sair) {
                 IO.println("<----------Sistema teste---------->");
-                cadastrar();
-                listar();
+                switch (digitado){
+                    case 1:
+                        cadastrar();
+                        break;
+                    case 2:
+                        listar();
+                        break;
+                    case 3:
+
+                        break;
+                    case 4:
+
+                        break;
+                    case 5:
+
+                        break;
+                    case 6:
+
+                        break;
+                    case 7:
+
+                        break;
+                    case 8:
+
+                        break;
+                    default:
+                        listarfuncoes();
+                        break;
+                }
+                buffer=IO.readln("Digite sua seleção: ");
+                digitado=Integer.parseInt(buffer);
             }
 
 
@@ -52,6 +84,17 @@ public class App {
         livros.forEach((key,Livro)->{
             IO.println("ISBN: "+key);
             IO.println("Titulo: "+Livro.getTiulo());
+            IO.println("----------------------------------------");
         });
+    }
+    public static void listarfuncoes(){
+        IO.println("1.Cadastrar um livro");
+        IO.println("2.Listar livros");
+        IO.println("3.Consultar pelo ISBN");
+        IO.println("4.Consultar pelo Autor");
+        IO.println("5.Consultar pelo ano de publicação");
+        IO.println("6.Atualizar dados de um livro");
+        IO.println("7.Remover um livro");
+        IO.println("8.Sair do sistema");
     }
 }
