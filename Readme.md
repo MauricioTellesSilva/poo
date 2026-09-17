@@ -13,5 +13,9 @@
 - [Introdução ao gradle-11/08/2026](Aulas/2026-08-11)
 - [Introdução as classes-18/08/2026](Aulas/2026-08-18)
 - [Exercicios sobre classes-19/08/2026](Aulas/2026-08-19)
+- [Exercicios sobre Getters e Setters classes-25/08/2026](Aulas/2026-08-25)
+- [Introdução ao ArrayList classes-15/09/2026](Aulas/2026-09-15)
+- [Introdução ao HashMap classes-16/09/2026](Aulas/2026-09-16)
+
 ## Laboratorios
 - [Introdução ao gradle (lab-02)-11/08/2026](laboratorios/lab-02)
