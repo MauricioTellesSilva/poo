@@ -30,6 +30,7 @@ public class App {
             while(!sair) {
                 IO.println("<----------Sistema teste---------->");
                 cadastrar();
+                listar();
             }
 
 
@@ -45,5 +46,12 @@ public class App {
         int ano =Integer.parseInt(IO.readln("Digite o ano de lançamento do livro: "));
         Livro cadastrado =new Livro(ano,Autor,Titulo);
         livros.put(ISBN,cadastrado);
+    }
+    public static void listar(){
+        IO.println("<--------------Lista de livros---------->");
+        livros.forEach((key,Livro)->{
+            IO.println("ISBN: "+key);
+            IO.println("Titulo: "+Livro.getTiulo());
+        });
     }
 }
