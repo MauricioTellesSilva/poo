@@ -1,13 +1,11 @@
 package ads.poo;
 
 public class Livro {
-    private String ISBN;
     private int Ano;
     private String Autor;
     private String Tiulo;
 
-    public Livro(String ISBN, int ano, String autor, String tiulo) {
-        this.ISBN = ISBN;
+    public Livro(int ano, String autor, String tiulo) {
         Ano = ano;
         Autor = autor;
         Tiulo = tiulo;

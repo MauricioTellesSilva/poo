@@ -9,8 +9,9 @@ package ads.poo;
 
 public class App {
 
-    public static void main(String[] args) {
+    static HashMap<String, Livro> livros= new HashMap<>();
 
+    public static void main(String[] args) {
         //HashMap<String,String> mapa=new HashMap<>();
         //mapa.put("123","Juca");
         //mapa.put("456","Ana");
@@ -24,11 +25,25 @@ public class App {
         //    IO.println(", valor: "+elemento.getValue());
         //}
         //mapa.remove("456"); //remoção pela chave
-
         //mapa.values().removeIf(e->e.equals("Juca"));// remove todos com valor igual Juca
+            boolean sair=false;
+            while(!sair) {
+                IO.println("<----------Sistema teste---------->");
+                cadastrar();
+            }
 
 
-
-
+    }
+    public static void cadastrar(){
+        String ISBN =IO.readln("Digite o ISBN do livro: ");
+        while(livros.containsKey(ISBN)){
+            IO.println("ISBN já cadastrado, tente novamente");
+            ISBN =IO.readln("Digite o ISBN do livro: ");
+        }
+        String Autor =IO.readln("Digite o Autor do livro: ");
+        String Titulo =IO.readln("Digite o Titulo do livro: ");
+        int ano =Integer.parseInt(IO.readln("Digite o ano de lançamento do livro: "));
+        Livro cadastrado =new Livro(ano,Autor,Titulo);
+        livros.put(ISBN,cadastrado);
     }
 }
