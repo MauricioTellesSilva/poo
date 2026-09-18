@@ -30,17 +30,20 @@ public class App {
             boolean sair=false;
             String buffer;
             int digitado=0;
-            while(!sair) {
+            do {
                 IO.println("<----------Sistema teste---------->");
                 switch (digitado){
                     case 1:
                         cadastrar();
+                        listarfuncoes();
                         break;
                     case 2:
                         listar();
+                        listarfuncoes();
                         break;
                     case 3:
-
+                        consutaISBN();
+                        listarfuncoes();
                         break;
                     case 4:
 
@@ -55,15 +58,15 @@ public class App {
 
                         break;
                     case 8:
-
+                        sair=true;
                         break;
                     default:
                         listarfuncoes();
                         break;
                 }
-                buffer=IO.readln("Digite sua seleção: ");
+                buffer=IO.readln("Digite sua selecao: ");
                 digitado=Integer.parseInt(buffer);
-            }
+            } while (!sair);
 
 
     }
@@ -88,6 +91,7 @@ public class App {
         });
     }
     public static void listarfuncoes(){
+        IO.println("<----------funcoes disponiveis---------->");
         IO.println("1.Cadastrar um livro");
         IO.println("2.Listar livros");
         IO.println("3.Consultar pelo ISBN");
@@ -96,5 +100,17 @@ public class App {
         IO.println("6.Atualizar dados de um livro");
         IO.println("7.Remover um livro");
         IO.println("8.Sair do sistema");
+    }
+    public static void consutaISBN(){
+        String ISBN =IO.readln("Digite o ISBN do livro: ");
+        livros.forEach((key,Livro)->{
+            if (ISBN.equals(key)){
+                IO.println("Titulo do livro: "+Livro.getTiulo());
+                IO.println("Autor do livro: "+Livro.getAutor());
+                IO.println("Ano de publicacao: "+Livro.getAno());
+            }
+        });
+
+
     }
 }
