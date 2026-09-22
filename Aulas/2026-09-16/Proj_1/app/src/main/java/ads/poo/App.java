@@ -46,7 +46,8 @@ public class App {
                         listarfuncoes();
                         break;
                     case 4:
-
+                        consultaAutor();
+                        listarfuncoes();
                         break;
                     case 5:
 
@@ -105,12 +106,24 @@ public class App {
         String ISBN =IO.readln("Digite o ISBN do livro: ");
         livros.forEach((key,Livro)->{
             if (ISBN.equals(key)){
+                IO.println("<---------- Livros com o ISBN: "+key+"----------->");
                 IO.println("Titulo do livro: "+Livro.getTiulo());
                 IO.println("Autor do livro: "+Livro.getAutor());
                 IO.println("Ano de publicacao: "+Livro.getAno());
+                IO.println("----------------------------------------");
             }
         });
-
-
+    }
+    public static void consultaAutor(){
+        String Autor=IO.readln("Digite o Autor do livro");
+        IO.println("<---------- Livro com o Autor: "+Autor+"----------->");
+        livros.forEach((key,Livro)->{
+            if (Autor.equals(Livro.getAutor())){
+                IO.println("ISBN do livro: "+key);
+                IO.println("Titulo do livro: "+Livro.getTiulo());
+                IO.println("Ano de publicacao: "+Livro.getAno());
+                IO.println("----------------------------------------");
+            }
+        });
     }
 }
