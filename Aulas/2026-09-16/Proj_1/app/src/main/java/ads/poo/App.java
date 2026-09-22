@@ -126,4 +126,17 @@ public class App {
             }
         });
     }
+    public static void consutaAno(){
+        String Ano=IO.readln("Digite o Ano da consulta");
+        IO.println("<---------- Livro com o Ano de publicação: "+Ano+"----------->");
+        livros.forEach((key,Livro)->{
+            if (Ano.equals(Livro.getAno())){
+                IO.println("ISBN do livro: "+key);
+                IO.println("Titulo do livro: "+Livro.getTiulo());
+                IO.println("Autor do livro: "+Livro.getAutor());
+                IO.println("----------------------------------------");
+            }
+        });
+
+    }
 }
