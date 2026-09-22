@@ -50,10 +50,12 @@ public class App {
                         listarfuncoes();
                         break;
                     case 5:
-
+                        consutaAno();
+                        listarfuncoes();
                         break;
                     case 6:
-
+                        atualizarDados();
+                        listarfuncoes();
                         break;
                     case 7:
 
@@ -137,6 +139,79 @@ public class App {
                 IO.println("----------------------------------------");
             }
         });
-
+    }
+    public static void atualizarDados(){
+        String ISBN=IO.readln("Digite o ISBN");
+        IO.println("<----------Atualizar dados de um lvro---------->");
+        IO.println("1.Atualizar apenas o Autor");
+        IO.println("2.Atualizar apenas o Titulo");
+        IO.println("3.Atualizar o ano de publicação");
+        IO.println("4.Atualizar o Autor e o Titulo");
+        IO.println("5.Atualizar o Titulo e publicação");
+        IO.println("6.Atualizar o Autor e o Ano de publicação");
+        IO.println("7.Atualizar todos os dados");
+        String Dig =IO.readln("Digite sua seleção: ");
+        int Sel=Integer.parseInt(Dig);
+        switch (Sel){
+            case 1:
+                livros.forEach((key,livro)->{
+                   String autor=IO.readln("Digite o autor:");
+                   livro.setAutor(autor);
+                });
+                break;
+            case 2:
+                livros.forEach((key,livro)->{
+                    String Titulo=IO.readln("Digite o Titulo:");
+                    livro.setTiulo(Titulo);
+                });
+                break;
+            case 3:
+                livros.forEach((key,livro)->{
+                    String Ano=IO.readln("Digite o Ano:");
+                    int Anoint=Integer.parseInt(Ano);
+                    livro.setAno(Anoint);
+                });
+                break;
+            case 4:
+                livros.forEach((key,livro)->{
+                    String autor=IO.readln("Digite o autor:");
+                    livro.setAutor(autor);
+                    String Titulo=IO.readln("Digite o Titulo:");
+                    livro.setTiulo(Titulo);
+                });
+                break;
+            case 5:
+                livros.forEach((key,livro)->{
+                    String Titulo=IO.readln("Digite o Titulo:");
+                    livro.setTiulo(Titulo);
+                    String Ano=IO.readln("Digite o Ano:");
+                    int Anoint=Integer.parseInt(Ano);
+                    livro.setAno(Anoint);
+                });
+                break;
+            case 6:
+                livros.forEach((key,livro)->{
+                    String autor=IO.readln("Digite o autor:");
+                    livro.setAutor(autor);
+                    String Ano=IO.readln("Digite o Ano:");
+                    int Anoint=Integer.parseInt(Ano);
+                    livro.setAno(Anoint);
+                });
+                break;
+            case 7:
+                livros.forEach((key,livro)->{
+                    String autor=IO.readln("Digite o autor:");
+                    livro.setAutor(autor);
+                    String Titulo=IO.readln("Digite o Titulo:");
+                    livro.setTiulo(Titulo);
+                    String Ano=IO.readln("Digite o Ano:");
+                    int Anoint=Integer.parseInt(Ano);
+                    livro.setAno(Anoint);
+                });
+                break;
+            default:
+                IO.println("Erro digite novamente :");
+                break;
+        }
     }
 }
