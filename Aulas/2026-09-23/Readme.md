@@ -17,4 +17,24 @@ classDiagram
     + getArea() int
     }
 ```
+```mermaid
+classDiagram
+    class Carro{
+        
+    -marca String
+    -propulsor Motor
+    +Carro()
+    +acelerar(v: int) void
+    }
+    class Motor{
+        -hp int
+        -giroAtual int
+        -cilindros int
+        +Motor()
+        +acelerar(v: int) void
+    }
+
+    Carro o-- Motor
+```
+
 
