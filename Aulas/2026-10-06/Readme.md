@@ -60,3 +60,16 @@ Cursos "1" o-- "1.*" Aluno
 Cursos "1.*" o-- "1.*" Materias
 Materias "1" o-- "1.*" Aulas
 ```
+### Diagrama Agenda Telefonica
+```mermaid
+classDiagram
+class Contato {
+
+}
+class Telefone{
+    
+}
+class Email{
+    
+}
+```
