@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbb89432-8d4f-43ce-9af5-5b3f9ee211ad" name="Changes" comment="" />
+    <list default="true" id="fbb89432-8d4f-43ce-9af5-5b3f9ee211ad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ads/poo/Agenda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ads/poo/Contato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ads/poo/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ads/poo/Telefone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ads/poo/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ads/poo/App.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,14 +21,41 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="2026-10-06" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="/opt/gradle/gradle-9.2.1" javaHome="/usr/java/jdk-25-oracle-x64" gradleVersion="9.2.1" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-9.2.1-bin/2t0n5ozlw9xmuyvbp7dnzaxug/gradle-9.2.1" javaHome="/usr/java/jdk-25-oracle-x64" gradleVersion="9.2.1" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="3KL3Sv6vOIMhXpjhCfSnMvvAGqa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,6 +64,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -54,6 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1791323033126</updated>
       <workItem from="1791323050941" duration="733000" />
+      <workItem from="1791417394220" duration="3473000" />
     </task>
     <servers />
   </component>
