@@ -15,25 +15,25 @@ public class Contato {
         this.sobreNome = sobreNome;
         this.dataNasc = dataNasc;
     }
-     void addTelefone(String rotulo,String valor){
+    boolean addTelefone(String rotulo,String valor){
         if (telefone.containsKey(rotulo)){
             return false;
         }
+    return true;
+    }
+    boolean addEmail(String rotulo,String valor){
 
     }
-     void addEmail(String rotulo,String valor){
+    boolean removeTelefone(String rotulo){
 
     }
-    void removeTelefone(String rotulo){
+    boolean removeEmail(String email){
 
     }
-     void removeEmail(String email){
+    boolean updateTelefone(String rotulo,String valor){
 
     }
-    void updateTelefone(String rotulo,String valor){
-
-    }
-    void updateEmail(String rotulo,String valor){
+    boolean updateEmail(String rotulo,String valor){
 
     }
 }
