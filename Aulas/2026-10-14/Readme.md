@@ -117,7 +117,13 @@ Para cada um dos exercícios abaixo, crie um diagrama UML com associações de h
 
 ```mermaid
 classDiagram
-
+    class Veiculo{
+        -id: String;
+        -velocidademaxima: String
+    }
+    class Terrestre{
+        
+    }
     class Carro{
 
     }
@@ -130,7 +136,12 @@ classDiagram
     class Caminhao{
 
     }
-        
+    Veiculo <|-- Terrestre
+    Veiculo <|-- Barco
+    Veiculo <|-- Aviao
+
+    Terrestre <|-- Carro
+    Terrestre<|-- Caminhao    
 ```
 
 ## Gato, cachorro, arara, galinha, baleia, tubarão
