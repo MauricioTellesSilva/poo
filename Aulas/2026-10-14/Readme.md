@@ -83,6 +83,9 @@ Para cada um dos exercícios abaixo, crie um diagrama UML com associações de h
         -genero: String;
         -anolancamento: String;
     }
+    class Periodico{
+        -issn: String;
+    }
     class Livro{
         -titulo: String;
         -autor: String;
@@ -91,15 +94,42 @@ Para cada um dos exercícios abaixo, crie um diagrama UML com associações de h
     }
     class Revista{
         -titulo: String;
+        -autor: String;
+        -edicao: String;
+    }
+    class Jornal{
+        -titulo: String;
+        -editor: String;
+    }
+    class Gibi{
+        -titulo: String;
         -edicao: String;
     }
 
    Produto <|-- Livro
+   Produto <|-- Periodico
+   Periodico <|-- Revista
+   Periodico <|-- Jornal
+   Periodico <|-- Gibi
 ```
 
 ## Carro, avião, barco, caminhão
 
 ```mermaid
+classDiagram
+
+    class Carro{
+
+    }
+    class Aviao{
+
+    }
+    class Barco{
+
+    }
+    class Caminhao{
+
+    }
         
 ```
 
