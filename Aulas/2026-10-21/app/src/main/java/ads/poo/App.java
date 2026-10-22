@@ -16,4 +16,5 @@ public class App {
         IO.println(arqueiro.atacar());
         IO.println(cavaleiro.atacar());
     }
+    //
 }
