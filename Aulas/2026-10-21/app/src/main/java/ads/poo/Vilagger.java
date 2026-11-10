@@ -1,6 +1,6 @@
 package ads.poo;
 
-public class Vilagger extends Character {
+public class Vilagger extends Character implements Collector, Guerreiro {
     @Override
     public String mover() {
         return "O Aldeão se moveu com "+super.getSpeed()+" de velocidade";
@@ -17,4 +17,5 @@ public class Vilagger extends Character {
         super(25, 1, 0.8);
 
     }
+
 }

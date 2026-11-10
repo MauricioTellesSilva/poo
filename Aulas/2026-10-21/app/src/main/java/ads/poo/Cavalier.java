@@ -1,6 +1,6 @@
 package ads.poo;
 
-public class Cavalier extends Character{
+public class Cavalier extends Character implements Guerreiro{
     public Cavalier() {
         super(50, 3, 2);
     }

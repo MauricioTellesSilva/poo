@@ -1,6 +1,6 @@
 package ads.poo;
 
-public class Character {
+public abstract class Character {
     private int life;
     private int attack;
     private double speed;
@@ -12,14 +12,8 @@ public class Character {
     }
 
 
-    public String mover(){
-
-        return "";
-    }
-    public String atacar(){
-
-        return "";
-    }
+    public abstract String mover();
+    public abstract String atacar();
 
     public int getAttack() {
         return attack;

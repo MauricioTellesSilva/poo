@@ -1,6 +1,6 @@
 package ads.poo;
 
-public class Archer extends Character{
+public class Archer extends Character implements Guerreiro{
     public Archer() {
         super(35, 2, 1);
     }
